@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogoSens — Przedszkole i Centrum Rozwoju Dziecka w Krakowie</title>
+<meta name="description" content="LogoSens — przedszkole i centrum rozwoju dziecka z grupą integracyjną w Krakowie.">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<meta property="og:title" content="LogoSens — Przedszkole i Centrum Rozwoju Dziecka w Krakowie">
+<meta property="og:description" content="LogoSens — przedszkole i centrum rozwoju dziecka z grupą integracyjną w Krakowie.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:image" content="images/galeria-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LogoSens — Przedszkole i Centrum Rozwoju Dziecka w Krakowie">
+<meta name="twitter:description" content="LogoSens — przedszkole i centrum rozwoju dziecka z grupą integracyjną w Krakowie.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ChildCare",
+  "name": "LogoSens",
+  "url": "https://logosens.biz/",
+  "email": "logosens.krakow@gmail.com",
+  "telephone": "+48537384318",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Jana Piltza 40",
+      "addressLocality": "Kraków",
+      "addressCountry": "PL"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Jana Piltza 42",
+      "addressLocality": "Kraków",
+      "addressCountry": "PL"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span class="addr">📍 ul. Jana Piltza 40, Kraków</span>
+      <a href="tel:+48537384318">📞 +48 537 384 318</a>
+    </div>
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="pl" class="active" aria-label="Polski">PL</button>
+      <button data-lang="ru" aria-label="Русский">RU</button>
+      <button data-lang="uk" aria-label="Українська">UA</button>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container nav-wrap">
+    <a href="#top" class="logo"><img src="images/logo.svg" alt="LogoSens"></a>
+    <nav class="main-nav">
+      <ul>
+        <li><span data-i18n="nav.poradnia">Poradnia</span>
+          <ul class="dropdown">
+            <li><a href="#poradnia" data-i18n="nav.poradnia_o">O nas Poradnia</a></li>
+            <li><a href="#gabinety" data-i18n="nav.log">Gabinet Logopedyczny</a></li>
+            <li><a href="#gabinety" data-i18n="nav.sens">Gabinet Sensoryczny</a></li>
+            <li><a href="#gabinety" data-i18n="nav.aba">Gabinet ABA-terapii</a></li>
+            <li><a href="#gabinety" data-i18n="nav.def">Gabinet Defektologii</a></li>
+          </ul>
+        </li>
+        <li><span data-i18n="nav.przedszkole">Przedszkole</span>
+          <ul class="dropdown">
+            <li><a href="#przedszkole" data-i18n="nav.przedszkole_o">O nas Przedszkole</a></li>
+            <li><a href="#organizacja" data-i18n="nav.org">Organizacja pracy</a></li>
+            <li><a href="#dzien" data-i18n="nav.dzien">Dzień w Przedszkolu</a></li>
+            <li><a href="#rekrutacja" data-i18n="nav.rekrutacja">Rekrutacja</a></li>
+          </ul>
+        </li>
+        <li><a href="#galeria" data-i18n="nav.galeria">Galeria</a></li>
+        <li><a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#kontakt" class="btn" data-i18n="nav.cta">Zapisz się</a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <span class="logo"><img src="images/logo.svg" alt="LogoSens" style="height:34px;"></span>
+    <button class="close-btn" id="closeMenu" aria-label="Zamknij menu">×</button>
+  </div>
+  <ul>
+    <li>
+      <details>
+        <summary data-i18n="nav.poradnia">Poradnia</summary>
+        <a href="#poradnia" data-i18n="nav.poradnia_o">O nas Poradnia</a>
+        <a href="#gabinety" data-i18n="nav.log">Gabinet Logopedyczny</a>
+        <a href="#gabinety" data-i18n="nav.sens">Gabinet Sensoryczny</a>
+        <a href="#gabinety" data-i18n="nav.aba">Gabinet ABA-terapii</a>
+        <a href="#gabinety" data-i18n="nav.def">Gabinet Defektologii</a>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary data-i18n="nav.przedszkole">Przedszkole</summary>
+        <a href="#przedszkole" data-i18n="nav.przedszkole_o">O nas Przedszkole</a>
+        <a href="#organizacja" data-i18n="nav.org">Organizacja pracy</a>
+        <a href="#dzien" data-i18n="nav.dzien">Dzień w Przedszkolu</a>
+        <a href="#rekrutacja" data-i18n="nav.rekrutacja">Rekrutacja</a>
+      </details>
+    </li>
+    <li><a href="#galeria" data-i18n="nav.galeria">Galeria</a></li>
+    <li><a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a></li>
+  </ul>
+  <a href="#kontakt" class="btn" style="display:block;text-align:center;margin-top:20px;" data-i18n="nav.cta">Zapisz się</a>
+</div>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 data-i18n="hero.title">Poradnia i Przedszkole „LogoSens” w Krakowie</h1>
+        <p data-i18n="hero.subtitle">Zapisy trwają przez cały rok, w miarę wolnych miejsc. Przyjmujemy dzieci od 2,5 roku życia. Przedszkole czynne 12 miesięcy w roku, od poniedziałku do piątku, 7:00–18:00.</p>
+        <a href="#kontakt" class="btn" data-i18n="hero.cta">Złóż wniosek o godzinę próbną</a>
+        <div class="hero-badges">
+          <div class="hero-badge" data-i18n="hero.badge1">👧 Grupy do 15 dzieci</div>
+          <div class="hero-badge" data-i18n="hero.badge2">🗣 Logopeda i psycholog</div>
+          <div class="hero-badge" data-i18n="hero.badge3">🌍 12 miesięcy w roku</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wave wave-hero" style="color:var(--bg);">
+    <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,32 C240,72 480,0 720,24 C960,48 1200,72 1440,16 L1440,64 L0,64 Z" fill="currentColor"/></svg>
+  </div>
+
+  <section id="poradnia">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="poradnia.tag">Poradnia „LogoSens”</span>
+        <h2 data-i18n="poradnia.title">Centrum Rozwoju Dziecka</h2>
+        <p data-i18n="poradnia.subtitle">Wsparcie w pokonywaniu trudności rozwojowych, edukacyjnych i społecznych dzieci i młodzieży.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3 data-i18n="poradnia.about_h">O Poradni</h3>
+          <p data-i18n="poradnia.about_p">Nasza placówka udziela wsparcia w pokonywaniu różnorodnych trudności. Wykorzystujemy szeroki wachlarz metod oraz nowoczesne oprogramowanie. Pomagamy osobom z problemami w nauce, trudnościami społecznymi, ADHD oraz innymi wyzwaniami.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3 data-i18n="poradnia.goals_h">Cele Poradni</h3>
+          <p data-i18n="poradnia.goals_p">Wsparcie psychologiczno-pedagogiczne, rehabilitacyjne i rewalidacyjne dzieci i młodzieży. Pomoc rodzicom i nauczycielom w kwestiach wychowawczych i edukacyjnych oraz wczesne wspomaganie rozwoju.</p>
+        </div>
+      </div>
+      <div class="about-grid" style="margin-top:26px;">
+        <div class="about-card reveal">
+          <h3 data-i18n="poradnia.help_h">Formy pomocy</h3>
+          <ul>
+            <li data-i18n="poradnia.help1">Indywidualne i grupowe zajęcia terapeutyczne</li>
+            <li data-i18n="poradnia.help2">Terapia rodzinna i grupy wsparcia</li>
+            <li data-i18n="poradnia.help3">Wszechstronna diagnoza funkcjonalna</li>
+            <li data-i18n="poradnia.help4">Warsztaty, porady i konsultacje</li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <h3 data-i18n="poradnia.diag_h">Diagnoza i opinie</h3>
+          <p data-i18n="poradnia.diag_p">Diagnozujemy indywidualne potrzeby rozwojowe i edukacyjne dzieci oraz wydajemy opinie dot. wczesnego wspomagania, dostosowania wymagań i poziomu funkcjonowania dziecka — na wniosek rodziców.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gabinety">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="gab.tag">Nasze gabinety</span>
+        <h2 data-i18n="gab.title">Specjalistyczna pomoc dla dzieci</h2>
+      </div>
+      <div class="gab-grid">
+        <div class="gab-card reveal">
+          <div class="icon">🗣</div>
+          <h4 data-i18n="gab.log_h">Gabinet Logopedyczny</h4>
+          <p data-i18n="gab.log_p">Stymulacja rozwoju mowy, diagnoza i terapia wad wymowy, usprawnianie narządów mowy, masaż logopedyczny.</p>
+        </div>
+        <div class="gab-card reveal">
+          <div class="icon">🤸</div>
+          <h4 data-i18n="gab.sens_h">Gabinet Sensoryczny</h4>
+          <p data-i18n="gab.sens_p">Terapia integracji sensorycznej poprawiająca odbiór i organizację wrażeń zmysłowych dziecka.</p>
+        </div>
+        <div class="gab-card reveal">
+          <div class="icon">🧩</div>
+          <h4 data-i18n="gab.aba_h">Gabinet ABA-terapii</h4>
+          <p data-i18n="gab.aba_p">Analiza i modyfikacja zachowań dziecka, rozwój umiejętności społecznych, komunikacyjnych i codziennych.</p>
+        </div>
+        <div class="gab-card reveal">
+          <div class="icon">📘</div>
+          <h4 data-i18n="gab.def_h">Gabinet Defektologii</h4>
+          <p data-i18n="gab.def_p">Diagnoza i wsparcie dzieci z trudnościami rozwojowymi i behawioralnymi, praca z dziećmi niepełnosprawnymi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="przedszkole">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="presch.tag">Przedszkole „LogoSens”</span>
+        <h2 data-i18n="presch.title">Niepubliczne Przedszkole z oddziałem integracyjnym</h2>
+        <p data-i18n="presch.subtitle">Kameralne grupy do 15 dzieci, indywidualne podejście i wykwalifikowana kadra.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3 data-i18n="presch.about_h">O przedszkolu</h3>
+          <p data-i18n="presch.about_p">Jasne, przestronne sale wyposażone w atestowane meble. Program edukacyjny zatwierdzony przez Ministerstwo Edukacji Narodowej, realizujemy też roczne przygotowanie przedszkolne.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3 data-i18n="presch.goals_h">Cele przedszkola</h3>
+          <ul>
+            <li data-i18n="presch.goal1">Wszechstronny rozwój intelektualny, emocjonalny i społeczny</li>
+            <li data-i18n="presch.goal2">Kształtowanie samodzielności i odpowiedzialności</li>
+            <li data-i18n="presch.goal3">Rozwijanie świadomości zdrowotnej i postaw proekologicznych</li>
+            <li data-i18n="presch.goal4">Przygotowanie do nauki w szkole</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizacja">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="org.tag">Organizacja pracy</span>
+        <h2 data-i18n="org.title">Czym wypełniamy dzień przedszkolaka</h2>
+      </div>
+      <div class="org-grid">
+        <div class="org-card reveal"><h4 data-i18n="org.h1">Język angielski</h4><p data-i18n="org.p1">Codzienna, naturalna nauka języka przez zabawę, w małych grupach.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h2">Zajęcia sensoryczno-motoryczne</h4><p data-i18n="org.p2">Koordynacja ruchów, motoryka duża i mała, koncentracja uwagi.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h3">Gimnastyka codziennie</h4><p data-i18n="org.p3">Orientacja w przestrzeni, zręczność, ogólny rozwój i postawa dziecka.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h4">Rytmika z muzyką</h4><p data-i18n="org.p4">2 razy w tygodniu — koordynacja, słuch, aparat fonetyczny.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h5">Warsztaty plastyczne</h4><p data-i18n="org.p5">3 razy w tygodniu — przygotowanie do pisania, kreatywność.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h6">Zajęcia teatralne</h4><p data-i18n="org.p6">Raz w tygodniu — autorskie projekty teatralne dzieci.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h7">Logopeda i psycholog</h4><p data-i18n="org.p7">Opieka oraz indywidualne zajęcia dla dzieci zakwalifikowanych.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h8">Gimnastyka buzi i języka</h4><p data-i18n="org.p8">Codziennie — ćwiczenia aparatu mowy.</p></div>
+        <div class="org-card reveal"><h4 data-i18n="org.h9">Zajęcia badawcze</h4><p data-i18n="org.p9">Doświadczenia i eksperymenty — nauka przez obserwację.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dzien">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="day.tag">Dzień w Przedszkolu</span>
+        <h2 data-i18n="day.title">Jak wygląda typowy dzień</h2>
+      </div>
+      <div class="timeline">
+        <div class="t-item reveal"><div class="t-time">7:00–8:00</div><div class="t-text" data-i18n="day.t1">Dzieci witają się i wybierają ulubione zabawy: klocki, lalki, samochody, gry planszowe.</div></div>
+        <div class="t-item reveal"><div class="t-time">8:00–8:50</div><div class="t-text" data-i18n="day.t2">Opowieści, bajki i codzienna gimnastyka poranna.</div></div>
+        <div class="t-item reveal"><div class="t-time">8:50–9:30</div><div class="t-text" data-i18n="day.t3">Toaleta, mycie rąk i śniadanie.</div></div>
+        <div class="t-item reveal"><div class="t-time">9:30–10:40</div><div class="t-text" data-i18n="day.t4">Zajęcia edukacyjne wg planu miesięcznego i Podstawy Programowej.</div></div>
+        <div class="t-item reveal"><div class="t-time">10:50–12:15</div><div class="t-text" data-i18n="day.t5">Zajęcia na świeżym powietrzu — gry, spacery, obserwacje przyrody.</div></div>
+        <div class="t-item reveal"><div class="t-time">12:30–13:00</div><div class="t-text" data-i18n="day.t6">Obiad.</div></div>
+        <div class="t-item reveal"><div class="t-time">13:00–14:00</div><div class="t-text" data-i18n="day.t7">Odpoczynek przy spokojnej muzyce i czytaniu bajek.</div></div>
+        <div class="t-item reveal"><div class="t-time">14:00–15:15</div><div class="t-text" data-i18n="day.t8">Spokojne zabawy, kolorowanie, gry planszowe, podwieczorek.</div></div>
+        <div class="t-item reveal"><div class="t-time">15:45–17:00</div><div class="t-text" data-i18n="day.t9">Powrót do domów z rodzicami lub dalsze zabawy w grupach.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rekrutacja">
+    <div class="container">
+      <div class="recruit reveal">
+        <div class="col">
+          <h3 data-i18n="rec.title">Rekrutacja trwa cały rok</h3>
+          <p data-i18n="rec.p1">Wnioski zapisu dziecka do Niepublicznego Przedszkola „LogoSens” przyjmujemy przez cały rok, w miarę wolnych miejsc. Przyjmujemy dzieci, które ukończyły 2,5 roku życia.</p>
+        </div>
+        <div class="col">
+          <p data-i18n="rec.p2">Czynne 12 miesięcy w roku, w dni robocze od poniedziałku do piątku, w godzinach od 7:00 do 17:00, z wyłączeniem świąt i dwutygodniowej przerwy wakacyjnej.</p>
+          <p>📧 <a href="mailto:logosens.krakow@gmail.com">logosens.krakow@gmail.com</a> &nbsp; 📞 <a href="tel:+48537384318">+48 537 384 318</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="gal.tag">Galeria</span>
+        <h2 data-i18n="gal.title">Zobacz nasze przedszkole</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-type="image" data-src="images/galeria-1.jpg"><img src="images/galeria-1.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-2.jpg"><img src="images/galeria-2.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-3.jpg"><img src="images/galeria-3.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="video" data-src="images/galeria-video.mp4"><img src="images/galeria-video-poster.jpg" alt="LogoSens video" loading="lazy"><span class="play-icon">▶</span><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-4.jpg"><img src="images/galeria-4.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-5.jpg"><img src="images/galeria-5.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-6.jpg"><img src="images/galeria-6.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-7.jpg"><img src="images/galeria-7.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-8.jpg"><img src="images/galeria-8.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-9.jpg"><img src="images/galeria-9.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-10.jpg"><img src="images/galeria-10.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+        <div class="gallery-item" data-type="image" data-src="images/galeria-11.jpg"><img src="images/galeria-11.jpg" alt="LogoSens galeria" loading="lazy"><span class="zoom-icon">⤢</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Zamknij">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Poprzednie">‹</button>
+    <img id="lightboxImg" src="" alt="LogoSens galeria">
+    <video id="lightboxVideo" controls playsinline style="display:none;"></video>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Następne">›</button>
+  </div>
+
+  <section id="kontakt">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="tag" data-i18n="contact.tag">Kontakt</span>
+        <h2 data-i18n="contact.title">Skontaktuj się z nami</h2>
+      </div>
+      <div class="contact-wrap">
+        <div>
+          <div class="contact-card reveal" style="margin-bottom:24px;">
+            <h4 data-i18n="contact.o1">Oddział I — ul. Jana Piltza 40</h4>
+            <p data-i18n="contact.o1p">LU 1, 2, 3 — Kraków</p>
+            <iframe src="https://maps.google.com/maps?q=ul.+Jana+Piltza+40,+Krak%C3%B3w&z=15&t=m&output=embed" loading="lazy"></iframe>
+          </div>
+          <div class="contact-card reveal">
+            <h4 data-i18n="contact.o2">Oddział II — ul. Jana Piltza 42</h4>
+            <p data-i18n="contact.o2p">LU 3, 4 — Kraków</p>
+            <iframe src="https://maps.google.com/maps?q=ul.+Jana+Piltza+42,+Krak%C3%B3w&z=15&t=m&output=embed" loading="lazy"></iframe>
+            <p style="margin-top:14px;">📞 +48 537 384 318 (O. Honcharuk) &nbsp;·&nbsp; +48 452 670 394<br>📧 logosens.krakow@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <h4 data-i18n="contact.form_h">Zostaw prośbę, skontaktujemy się z Tobą</h4>
+          <form id="contactForm">
+            <input type="text" name="name" data-i18n-ph="contact.name" placeholder="Twoje imię" required>
+            <input type="tel" name="phone" id="phoneInput" inputmode="numeric" pattern="[0-9]*" data-i18n-ph="contact.phone" placeholder="Twój telefon" required>
+            <textarea rows="4" name="message" data-i18n-ph="contact.desc" placeholder="Opisz swój problem"></textarea>
+            <label><input type="checkbox" required style="margin-top:3px;"> <span data-i18n="contact.consent">Zgoda na przetwarzanie danych osobowych</span></label>
+            <button type="submit" class="btn" data-i18n="contact.submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="wave wave-footer" style="color:var(--navy);">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C240,0 480,64 720,32 C960,0 1200,48 1440,24 L1440,64 L0,64 Z" fill="currentColor"/></svg>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="logo" style="color:#fff;"><img src="images/logo-white.svg" alt="LogoSens" style="height:38px;"></span>
+        <p data-i18n="footer.about" style="margin-top:14px;max-width:320px;">Przedszkole i centrum rozwoju dziecka z grupą integracyjną w Krakowie.</p>
+        <div class="social"><a href="https://www.facebook.com/burichko" target="_blank">f</a></div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.nav">Menu</h4>
+        <p><a href="#poradnia" data-i18n="nav.poradnia">Poradnia</a></p>
+        <p><a href="#przedszkole" data-i18n="nav.przedszkole">Przedszkole</a></p>
+        <p><a href="#galeria" data-i18n="nav.galeria">Galeria</a></p>
+        <p><a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a></p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Kontakt</h4>
+        <p>📍 ul. Jana Piltza 40, Kraków</p>
+        <p><a href="tel:+48537384318">+48 537 384 318</a></p>
+        <p><a href="mailto:logosens.krakow@gmail.com">logosens.krakow@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 LogoSens. <span data-i18n="footer.rights">Wszelkie prawa zastrzeżone.</span></div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+                            
